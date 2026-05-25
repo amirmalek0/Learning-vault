@@ -1,0 +1,8 @@
+{
+  "label": "Software Engineering",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Notes on programming, design patterns, and software craftsmanship."
+  }
+}

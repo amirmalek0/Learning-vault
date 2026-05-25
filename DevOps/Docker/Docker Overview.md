@@ -49,7 +49,7 @@ This sharing makes containers much lighter (MBs instead of GBs) and faster to st
 Docker did **not** invent containers. It built a user-friendly experience on top of existing Linux kernel features (namespaces + cgroups).
 
 For a deep dive into LXC, LXD, LXCFS, runc, containerd, and CRI-O, see:
-→ **[Low-Level Container Technologies](low-level-containers.md)**
+→ **[Low-Level Container Technologies](../Linux/core/low-level-containers.md)**
 
 **Key point**: These are **low-level** tools. Configuring them manually is complex. Docker provides a **high-level experience** (simple CLI, image format, registry integration, Dockerfile, etc.).
 
