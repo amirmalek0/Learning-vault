@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Docker/Docker Overview.md",
+                "file": "DevOps/Linux/lpic1/Hardware.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker Overview"
+              "title": "Hardware"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Docker/Docker Overview.md",
+                "file": "DevOps/Linux/lpic1/Hardware.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Docker Overview"
+              "title": "Outline of Hardware"
             }
           }
         ],
@@ -181,8 +181,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "a7f05a32f31b6abf",
+  "active": "edbe0a11b8dd258b",
   "lastOpenFiles": [
+    "DevOps/Linux/lpic1/Hardware.md",
+    "DevOps/Linux/lpic1",
     "DevOps/Docker/Docker Overview.md",
     "Untitled.canvas",
     "DevOps/Linux/core/low-level-containers.md",
