@@ -1,0 +1,170 @@
+/* ============================================================
+   Hero / Landing
+   ============================================================ */
+
+.heroBanner {
+  position: relative;
+  padding: 7rem 0 6rem;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: transparent;
+  color: var(--ifm-font-color-base);
+}
+
+/* Animated gradient mesh background */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.25), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.22), transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(139, 92, 246, 0.2), transparent 50%);
+  animation: float 18s ease-in-out infinite;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+/* Grid overlay */
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+[data-theme='dark'] .heroBanner::after {
+  background-image:
+    linear-gradient(rgba(129, 140, 248, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(129, 140, 248, 0.08) 1px, transparent 1px);
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(3%, -2%) scale(1.05); }
+  66% { transform: translate(-2%, 3%) scale(0.95); }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  background: var(--lv-card-bg);
+  border: 1px solid var(--lv-card-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.75rem;
+  animation: fadeUp 0.6s ease 0.05s both;
+}
+
+.badgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.heroTitle {
+  font-family: var(--ifm-heading-font-family);
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0 0 1.25rem;
+  animation: fadeUp 0.7s ease 0.1s both;
+}
+
+.heroTitleGradient {
+  background: var(--lv-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+.heroSubtitle {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  color: var(--ifm-color-emphasis-700);
+  animation: fadeUp 0.7s ease 0.2s both;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s ease 0.3s both;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s ease 0.45s both;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--lv-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner { padding: 4rem 1.5rem 3rem; }
+  .stats { gap: 2rem; margin-top: 2.5rem; }
+}
