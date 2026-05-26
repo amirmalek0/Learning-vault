@@ -4,7 +4,11 @@
 
 .heroBanner {
   position: relative;
-  padding: 7rem 0 6rem;
+  min-height: calc(100vh - var(--ifm-navbar-height) - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
   text-align: center;
   overflow: hidden;
   isolation: isolate;
@@ -165,6 +169,8 @@
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner { padding: 4rem 1.5rem 3rem; }
-  .stats { gap: 2rem; margin-top: 2.5rem; }
+  .heroBanner {
+    padding: 3rem 1.5rem;
+    min-height: calc(100vh - var(--ifm-navbar-height));
+  }
 }

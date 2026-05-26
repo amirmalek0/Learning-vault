@@ -1,4 +1,4 @@
-# LPIC-1: Hardware, Firmware & System Initialization
+# Hardware, Firmware & System Initialization
 
 This document provides a comprehensive overview of computer hardware, firmware, and how the Linux operating system interacts with them — essential knowledge for the LPIC-1 certification.
 

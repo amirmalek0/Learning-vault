@@ -27,10 +27,13 @@ const config: Config = {
   onBrokenLinks: 'warn',
 
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
   },
+
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -49,17 +52,27 @@ const config: Config = {
           path: '../',
           routeBasePath: '/', // Serve docs at the site root
           sidebarPath: './sidebars.ts',
-          // Exclude the website itself and dotfolders from docs scanning
+          // Exclude the website itself, dotfolders, and meta files from docs scanning
           exclude: [
             '**/node_modules/**',
             '**/website/**',
             '**/.obsidian/**',
             '**/.git/**',
+            '**/.github/**',
+            '**/.cursor/**',
             '**/build/**',
             'README.md',
+            'AGENTS.md',
+            'CONTRIBUTING.md',
+            'LICENSE.md',
+            'CHANGELOG.md',
           ],
-          editUrl:
-            'https://github.com/amirmalek0/Learning-vault/tree/master/',
+          // Docs path is '../' (repo root), so docPath is '../DevOps/...'. Strip '../'
+          // or tree/master/../ resolves to tree/DevOps/... (wrong branch segment).
+          editUrl: ({docPath}) => {
+            const repoPath = docPath.replace(/^\.\.\//, '');
+            return `https://github.com/amirmalek0/Learning-vault/blob/master/${repoPath}`;
+          },
         },
         blog: false,
         theme: {
