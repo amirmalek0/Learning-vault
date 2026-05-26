@@ -183,6 +183,7 @@
   },
   "active": "a7f05a32f31b6abf",
   "lastOpenFiles": [
+    "README.md",
     "website/build/sitemap.xml",
     "website/build/DevOps/Linux/lpic1/Hardware.html",
     "website/build/DevOps/Linux/core/low-level-containers.html",
@@ -193,7 +194,6 @@
     "website/build/DevOps/Docker",
     "website/build/DevOps",
     "website/build/Software Engineering.html",
-    "website/build/index.html",
     "website/build/img/logo.svg",
     "website/build/img/logo-512.png",
     "website/build/img/logo-192.png",
