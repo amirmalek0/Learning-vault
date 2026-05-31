@@ -51,7 +51,7 @@ MBR is the **older method** (introduced in the 1980s).
     - A partition table (information about disk partitions).
 4. The boot program loads the operating system.
 
-![[mbr.png|304]]
+<img src="../../../assets/mbr.png" alt="MBR diagram" width="304" />
 
 ## GPT (GUID Partition Table)
 GPT is the **modern replacement** for MBR and is part of the **UEFI** standard.
@@ -62,7 +62,8 @@ GPT is the **modern replacement** for MBR and is part of the **UEFI** standard.
 4. UEFI loads a bootloader from the ESP.
 5. The bootloader starts the operating system.
 
-![[gpt.png|216]]
+<img src="../../../assets/gpt.png" alt="GPT diagram" width="216" />
+
 ### Comparison Table
 
 | Feature                  | MBR                          | GPT                              |
