@@ -41,22 +41,28 @@ This document provides a comprehensive overview of computer hardware, firmware, 
 
 ## MBR vs GPT
 
-### MBR (Master Boot Record)
-- Located in the **first 512 bytes** of a hard disk
-- Contains:
-  - Bootloader code (first 446 bytes)
-  - Partition table (4 primary partitions max)
-  - Disk signature
-- Maximum disk size: **2 TiB**
-- Maximum 4 primary partitions (or 3 primary + 1 extended)
+## MBR (Master Boot Record)
+MBR is the **older method** (introduced in the 1980s).
+### How it works
+1. Computer powers on.
+2. BIOS firmware looks at the **first sector** of the disk.
+3. That sector contains:
+    - A small boot program.
+    - A partition table (information about disk partitions).
+4. The boot program loads the operating system.
 
-### GPT (GUID Partition Table)
-- Part of the **UEFI** specification
-- Uses **GUIDs** (128-bit identifiers) for partitions
-- Supports up to **128 partitions** by default
-- Maximum disk size: **8 ZiB** (theoretically)
-- More robust (CRC32 checksums, backup partition table)
+![[mbr.png|304]]
 
+## GPT (GUID Partition Table)
+GPT is the **modern replacement** for MBR and is part of the **UEFI** standard.
+### How it works
+1. Computer powers on.
+2. UEFI firmware reads GPT information.
+3. GPT identifies an **EFI System Partition (ESP)**.
+4. UEFI loads a bootloader from the ESP.
+5. The bootloader starts the operating system.
+
+![[gpt.png|216]]
 ### Comparison Table
 
 | Feature                  | MBR                          | GPT                              |

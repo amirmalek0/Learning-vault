@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d2136e1042eb2893",
+        "id": "2476bc900e88468d",
         "type": "tabs",
         "children": [
           {
-            "id": "a7f05a32f31b6abf",
+            "id": "6d9078bb442720e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Docker/Docker Overview.md",
-                "mode": "source",
+                "file": "DevOps/Linux/lpic1/Hardware.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker Overview"
+              "title": "Hardware"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Docker/Docker Overview.md",
+                "file": "DevOps/Linux/lpic1/Hardware.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Docker Overview"
+              "title": "Outline of Hardware"
             }
           }
         ],
@@ -181,8 +181,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "a7f05a32f31b6abf",
+  "active": "6d9078bb442720e3",
   "lastOpenFiles": [
+    "assets/mbr.png",
+    "DevOps/Linux/lpic1/Hardware.md",
+    "assets/gpt.png",
+    "assets",
+    "Screenshot 1405-03-10 at 15.39.50.png",
+    "DevOps/Docker/Docker Overview.md",
     "README.md",
     "website/build/sitemap.xml",
     "website/build/DevOps/Linux/lpic1/Hardware.html",
@@ -193,16 +199,13 @@
     "website/build/DevOps/Linux",
     "website/build/DevOps/Docker",
     "website/build/DevOps",
-    "website/build/Software Engineering.html",
     "website/build/img/logo.svg",
     "website/build/img/logo-512.png",
     "website/build/img/logo-192.png",
     "DevOps/Docker/dddd.md",
     "DevOps/Docker/UI Test.md",
-    "DevOps/Docker/Docker Overview.md",
     "DevOps/Docker/Docker Overview copy.md",
     "DevOps/Docker/Docker Network.md",
-    "DevOps/Linux/lpic1/Hardware.md",
     "website/node_modules/katex/src/metrics/README.md",
     "website/node_modules/katex/node_modules/commander/Readme.md",
     "website/node_modules/katex/contrib/mhchem/README.md",
@@ -222,13 +225,9 @@
     "website/node_modules/d3-dsv/README.md",
     "website/node_modules/cytoscape-fcose/node_modules/layout-base/layout-schema.png",
     "website/node_modules/cytoscape-fcose/node_modules/layout-base/README.md",
-    "website/node_modules/cytoscape-fcose/node_modules/cose-base/README.md",
     "website/node_modules/cytoscape-fcose/demo/incrementalConstraints.gif",
     "website/node_modules/cytoscape-fcose/demo/demo.gif",
     "website/node_modules/layout-base/layout-schema.png",
-    "website/static/img/logo-512.png",
-    "website/static/img/logo-192.png",
-    "website/static/img/logo.svg",
     "Untitled.canvas"
   ]
 }
